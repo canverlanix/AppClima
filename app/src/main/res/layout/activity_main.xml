@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<TextView
+android:id="@+id/txtSearch"
+android:layout_width="match_parent"
+android:layout_height="42dp"
+android:hint="Ex. Cali, CO"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+android:id="@+id/btnSearch"
+android:layout_width="410dp"
+android:layout_height="42dp"
+android:text="SEARCH WEATHER"
+app:layout_constraintTop_toBottomOf="@+id/txtSearch"
+tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="409dp"
+        android:layout_height="47dp"
+        android:text="GO TO MAPS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+android:id="@+id/textView2"
+android:layout_width="205dp"
+android:layout_height="42dp"
+android:text="Current:"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
+
+<TextView
+android:id="@+id/lblCurrent"
+android:layout_width="205dp"
+android:layout_height="42dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toEndOf="@+id/textView2"
+app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
+
+<TextView
+android:id="@+id/textView4"
+android:layout_width="205dp"
+android:layout_height="42dp"
+android:text="Min:"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+<TextView
+android:id="@+id/lblmin"
+android:layout_width="205dp"
+android:layout_height="42dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/lblCurrent" />
+
+<TextView
+android:id="@+id/textView6"
+android:layout_width="205dp"
+android:layout_height="42dp"
+android:text="Max:"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+<TextView
+android:id="@+id/lblmax"
+android:layout_width="205dp"
+android:layout_height="42dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/lblmin" />
+
+<TextView
+android:id="@+id/textView8"
+android:layout_width="205dp"
+android:layout_height="42dp"
+android:text="Weather:"
+app:layout_constraintEnd_toStartOf="@+id/textViewWeather"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+<TextView
+android:id="@+id/textViewWeather"
+android:layout_width="205dp"
+android:layout_height="42dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/lblmax" />
+
+    <ImageView
+        android:id="@+id/imgWeather"
+        android:layout_width="88dp"
+        android:layout_height="78dp"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="308dp"
+        tools:srcCompat="@tools:sample/avatars" />
